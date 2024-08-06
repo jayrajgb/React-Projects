@@ -3,30 +3,41 @@ import fetchNews from "../data/fetchNews";
 
 import NewsCard from "./NewsCard";
 
-const NewsPage = () => {
+const NewsPage = (props) => {
 
     const [data, setData] = useState([]);
 
     useEffect(()=>{
-        fetchNews().then((response)=>{
+        fetchNews(props.value).then((response)=>{
             console.log(response);
             setData(response.articles);
             console.log(data);
         })
-    }, [])
+    }, [props])
 
     return (
         <>
-        <div className="w-full pt-28 pb-10 flex flex-wrap gap-6 justify-center">
-            {
-                data.map((item, index)=>{
-                    return (
-                        <NewsCard value={item} key={index} />
-                    )
-                })
-            }
+        {
+            data &&
+            (
+                <div className=" pt-28 pb-10 flex flex-wrap gap-6 justify-center">
+                    {
+                        data.map((item, index)=>{
+                            return (
+                                <NewsCard value={item} key={index} />
+                            )
+                        })
+                    }
 
-        </div>
+                </div>
+            )
+            // :
+            // (
+            //     <div className=" pt-28 pb-10 text-center font-redhat font-semibold text-2xl">
+            //         No Results Found
+            //     </div>
+            // )
+        }
         </>
     )
 }
