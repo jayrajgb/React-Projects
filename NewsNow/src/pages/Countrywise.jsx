@@ -1,31 +1,29 @@
 import React, { useEffect, useState } from 'react'
-import SearchBar from '../components/SearchBar'
+import SearchCountry from '../components/SearchCountry';
 import Navbar from '../components/Navbar'
 import NewsPage from '../components/NewsPage'
 
 const apiKey = import.meta.env.VITE_myApiKey;
 
-const Homepage = () => {    
+const Countrywise = () => {    
 
-  const [query, setQuery] = useState("");
+  const [country, setCountry] = useState("");
 
   const [path, setPath] = useState("");
 
   useEffect(()=>{
-    setPath(`https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}`);
-    // console.log("Query is changed:", query);
-    // console.log("Path: ", path);
-},[query, setQuery])
+    setPath(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`);
+},[country])
 
   return (
     <>
     <div className='bg-neutral-100 w-screen min-h-screen'>
       <Navbar />
-      <SearchBar value={{query, setQuery}} />
+      <SearchCountry value={{country, setCountry}} />
       <NewsPage value={path} />
     </div>
     </>
   )
 }
 
-export default Homepage
+export default Countrywise;

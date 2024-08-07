@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './pages/App.jsx'
 import './index.css'
 import Homepage from './pages/Homepage.jsx'
-
+import Countrywise from './pages/Countrywise.jsx'
 
 import { createBrowserRouter, BrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
     },
     {
       path: "/topnews",
-      element: <App news={display.topnews} />
+      element: <Countrywise />
     },
     {
       path: "/indianews",

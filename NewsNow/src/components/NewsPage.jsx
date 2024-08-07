@@ -9,18 +9,17 @@ const NewsPage = (props) => {
 
     useEffect(()=>{
         fetchNews(props.value).then((response)=>{
-            console.log(response);
-            setData(response.articles);
-            console.log(data);
+            console.log("Response on new page: ",response);
+            setData(response);
         })
-    }, [props])
+    }, [props.value])
 
     return (
         <>
         {
             data &&
             (
-                <div className=" pt-28 pb-10 flex flex-wrap gap-6 justify-center">
+                <div className="w-screen pt-28 pb-10 px-5 flex flex-wrap gap-6 justify-center">
                     {
                         data.map((item, index)=>{
                             return (

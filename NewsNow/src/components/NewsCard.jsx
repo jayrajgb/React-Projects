@@ -11,7 +11,7 @@ const NewsCard = (props) => {
 
     useEffect(()=>{
         setUrl(props.value.url);
-        console.log("Url: ",url);
+        // console.log("Url: ",url);
     }, [])
 
     return (
