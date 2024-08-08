@@ -16,7 +16,7 @@ const NewsCard = (props) => {
 
     return (
         <>
-            <div className="w-36 md:w-64 min-h-48 md:min-h-56 p-2 shadow-lg border border-cyan-500 rounded-md flex-col space-y-2 font-redhat text-sm md:text-lg cursor-pointer hover:bg-neutral-200" onClick={openNews}>
+            <div className="w-36 md:w-64 min-h-48 md:min-h-56 p-2 shadow-lg border border-cyan-500 dark:border-none rounded-md flex-col space-y-2 font-redhat text-sm md:text-lg dark:text-neutral-100 cursor-pointer hover:bg-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-950" onClick={openNews}>
                 {
                     (props.value.urlToImage) ? 
                     (

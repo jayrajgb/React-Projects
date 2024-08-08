@@ -19,7 +19,7 @@ const Homepage = () => {
 
   return (
     <>
-    <div className='bg-neutral-100 w-screen min-h-screen'>
+    <div className='bg-neutral-100 dark:bg-neutral-800 w-screen min-h-screen'>
       <Navbar />
       <SearchBar value={{query, setQuery}} />
       <NewsPage value={path} />

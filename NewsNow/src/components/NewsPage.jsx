@@ -19,7 +19,7 @@ const NewsPage = (props) => {
         {
             data &&
             (
-                <div className="w-screen py-10 px-5 pb-10 flex flex-wrap gap-6 justify-center">
+                <div className="w-screen py-10 px-5 pb-10 flex flex-wrap gap-6 justify-center dark:bg-neutral-800">
                     {
                         data.map((item, index)=>{
                             return (

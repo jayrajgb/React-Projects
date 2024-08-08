@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='w-screen bg-neutral-100 py-4 px-12 flex-col drop-shadow-md fixed z-10'>
+      <div className='w-screen bg-neutral-100 dark:bg-neutral-900 dark:text-neutral-100 py-4 px-12 flex-col drop-shadow-md fixed z-10'>
         <div className='flex justify-between w-full items-center'>
           <div className='h-full flex items-center'>
             <div className='h-full font-bebas text-3xl md:text-4xl font-semibold flex items-center cursor-pointer'>
