@@ -17,7 +17,7 @@ const Countrywise = () => {
 
   return (
     <>
-    <div className='bg-neutral-100 w-screen min-h-screen'>
+    <div className='bg-neutral-100 dark:bg-neutral-800 w-screen min-h-screen'>
       <Navbar />
       <SearchCountry value={{country, setCountry}} />
       <NewsPage value={path} />
