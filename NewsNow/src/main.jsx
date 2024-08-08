@@ -4,6 +4,7 @@ import IndiaNews from './pages/IndiaNews.jsx'
 import './index.css'
 import Homepage from './pages/Homepage.jsx'
 import Countrywise from './pages/Countrywise.jsx'
+import Wrapper from './Wrapper.jsx'
 
 import { createBrowserRouter, BrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -18,15 +19,15 @@ const router = createBrowserRouter(
   [
     {
       path: "/",
-      element: <Homepage />
+      element: <Wrapper> <Homepage /> </Wrapper>
     },
     {
       path: "/topnews",
-      element: <Countrywise />
+      element: <Wrapper> <Countrywise /> </Wrapper>
     },
     {
       path: "/indianews",
-      element: <IndiaNews news={display.indianews} />
+      element: <Wrapper> <IndiaNews news={display.indianews} /> </Wrapper>
     },
     {
       path: "/about",

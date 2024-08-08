@@ -20,3 +20,7 @@
     background-color: #222;
     border-radius: 5px;
 }
+
+*{
+    @apply transition-colors duration-100;
+}
