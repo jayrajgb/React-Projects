@@ -5,9 +5,9 @@ const SearchBar = (props) => {
 
   return (
     <>
-    <div className="pt-24 h-48 bg-neutral-100 flex justify-center items-center">
-        <div className="w-2/5 bg-green-500 h-1/2 rounded-full relative z-0">
-            <input type="text" className="size-full px-6 text-lg font-redhat font-semibold bg-neutral-100 rounded-full absolute border-2 border-neutral-200 outline-none hover:outline hover:outline-cyan-500 "
+    <div className="pt-24 h-44 md:h-48 bg-neutral-100 flex justify-center items-center">
+        <div className="w-3/5 md:w-2/5 h-1/2 rounded-full relative z-0">
+            <input type="text" className="size-full px-4 md:px-6 text-sm md:text-lg font-redhat font-semibold bg-neutral-100 rounded-full absolute border-2 border-neutral-200 outline-none hover:outline hover:outline-cyan-500 "
             onChange={(e) => {
                 props.value.query = e.target.value;
                 // console.log("Query: ", e.target.value);
@@ -15,7 +15,7 @@ const SearchBar = (props) => {
             }}
             placeholder="Search news..."
             />
-            <button className="h-full w-24 absolute right-0 flex justify-center items-center rounded-full bg-cyan-400 hover:bg-cyan-500"
+            <button className="h-full w-16 md:w-24 absolute right-0 flex justify-center items-center rounded-full bg-cyan-400 hover:bg-cyan-500"
             onClick={()=>{
                 if(props.value.query === ""){
                     alert("Search something!");
@@ -30,7 +30,7 @@ const SearchBar = (props) => {
                 }
             }}
             >
-                <img className="size-5" src={search} />
+                <img className="size-4 md:size-5" src={search} />
             </button>
         </div>
     </div>

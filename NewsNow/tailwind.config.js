@@ -9,8 +9,8 @@ export default {
       
     },
     fontFamily: {
-      bebas: ['Bebas Neue'],
-      redhat: ['Red Hat Display']
+      bebas: ['Bebas Neue', 'consolas'],
+      redhat: ['Red Hat Display', 'consolas']
     }
   },
   plugins: [],
