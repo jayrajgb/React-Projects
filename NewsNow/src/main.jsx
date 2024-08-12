@@ -5,6 +5,7 @@ import './index.css'
 import Homepage from './pages/Homepage.jsx'
 import Countrywise from './pages/Countrywise.jsx'
 import Wrapper from './Wrapper.jsx'
+import About from './pages/About.jsx'
 
 import { createBrowserRouter, BrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -22,7 +23,7 @@ const router = createBrowserRouter(
       element: <Wrapper> <Homepage /> </Wrapper>
     },
     {
-      path: "/topnews",
+      path: "/worldnews",
       element: <Wrapper> <Countrywise /> </Wrapper>
     },
     {
@@ -31,7 +32,7 @@ const router = createBrowserRouter(
     },
     {
       path: "/about",
-      // element: <App news={display.indianews} />
+      element: <Wrapper> <About /> </Wrapper>
     }
   ]
 )
