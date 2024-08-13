@@ -53,8 +53,8 @@ const Navbar = () => {
             <div className='flex justify-center py-4'>
               <ul className='text-center flex-col md:hidden text-lg font-redhat font-semibold'>
                 <li className='cursor-pointer hover:text-cyan-500' onClick={() => navigate("/")}>Home</li>
-                <li className='cursor-pointer hover:text-cyan-500' onClick={() => navigate("/worldnews")}>Top News</li>
-                <li className='cursor-pointer hover:text-cyan-500' onClick={() => navigate("/indianews")}>India News</li>
+                <li className='cursor-pointer hover:text-cyan-500' onClick={() => navigate("/worldnews")}>World Now</li>
+                <li className='cursor-pointer hover:text-cyan-500' onClick={() => navigate("/indianews")}>India Now</li>
                 <li className='cursor-pointer hover:text-cyan-500' onClick={() => navigate("/about")}>About</li>
               </ul>
             </div>
