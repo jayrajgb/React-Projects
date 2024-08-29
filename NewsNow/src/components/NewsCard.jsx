@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import noimg from '../assets/noImg.jpg'
 
 const NewsCard = (props) => {
 
@@ -22,7 +22,14 @@ const NewsCard = (props) => {
                     (
                         <>
                             <div className="h-2/5">
-                                <img className="size-full rounded-md object-cover" src={props.value.urlToImage} />
+                                <img 
+                                className="size-full rounded-md object-cover" 
+                                src={props.value.urlToImage} 
+                                onError={(e)=>{
+                                    e.target.src = noimg
+                                    console.log("Image not available!");
+                                }} 
+                                />
                             </div>
                             <div className="h-3/5 flex-col justify-between">
                                 <div className="h-4/5 font-semibold pb-2">

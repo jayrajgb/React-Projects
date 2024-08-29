@@ -11,8 +11,15 @@ const Countrywise = () => {
 
   const [path, setPath] = useState("");
 
+  const [initialRender, setInitialRender] = useState(true);
+
   useEffect(()=>{
-    setPath(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`);
+    if(initialRender){
+      setInitialRender(false);
+    }
+    else{
+      setPath(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`);
+    }
 },[country])
 
   return (

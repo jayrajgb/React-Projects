@@ -4,6 +4,8 @@ import reacticon from '../assets/react.svg'
 import tw from '../assets/tailwind-css-2.svg'
 import tick from '../assets/tick.svg'
 import newsapi from '../assets/newsapi.png'
+import linkedin from '../assets/linkedin.svg'
+import github from '../assets/github.svg'
 
 const About = () => {
   return (
@@ -27,14 +29,15 @@ const About = () => {
                 </div>
             </div>
         </div>
-        <div className='h-36 text-md md:text-2xl'>
+        <div className='min-h-36 text-md md:text-2xl'>
             <p className='h-1/3 px-5 md:px-20 flex items-center justify-center underline underline-offset-2 decoration-cyan-500'>
                 Key Features
             </p>
-            <ul className='h-2/3 font-medium '>
+            <ul className='h-2/3 font-medium py-2'>
                 <li>Get Daily Updates</li>
                 <li>Search News Across The Globe</li>
                 <li>Explore Country-Specific Top Headlines</li>
+                <li>Latest News Across Various Trending Topics</li>
             </ul>
         </div>
         <div className='h-36 text-md md:text-2xl'>
@@ -42,8 +45,25 @@ const About = () => {
                 API
             </p>
             <a href="https://newsapi.org/" className='h-2/3 flex justify-center pt-3'>
-                <img className='h-1/2 hover:drop-shadow-[0_0_1em_rgba(50,80,200,0.5)]' src={newsapi} alt="" />
+                <img className='h-3/5 hover:drop-shadow-[0_0_1em_rgba(50,80,200,0.5)]' src={newsapi} alt="" />
             </a>
+        </div>
+        <div className='h-24 text-md md:text-2xl mb-16'>
+            <p className='h-1/3 px-5 md:px-20 flex items-center justify-center underline underline-offset-2 decoration-cyan-500'>
+                Handles
+            </p>
+            <div className='h-2/3 flex pt-3'>
+                <div className='w-1/2 flex justify-end pr-5 cursor-pointer'>
+                    <a href="https://in.linkedin.com/in/jayraj-borate-433035232" className='h-full'>
+                        <img className='h-full dark:invert hover:drop-shadow-[0_0_1em_rgba(50,80,200,0.75)]' src={linkedin} />
+                    </a>
+                </div>
+                <div className='w-1/2 flex items-center pl-5 cursor-pointer'>
+                    <a href="https://github.com/jayrajgb" className='h-full'>
+                        <img className='h-full dark:invert hover:drop-shadow-[0_0_1em_rgba(50,80,200,0.75)]' src={github} />
+                    </a>
+                </div>
+            </div>
         </div>
       </div>
     </>

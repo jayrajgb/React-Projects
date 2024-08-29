@@ -5,7 +5,7 @@ const SearchCountry = (props) => {
   const [currCountry, setCurrCountry] = useState("");
   
   const handleClick = (countryCode, countryName) => {
-    console.log("CountryCode: ", countryCode);
+    // console.log("CountryCode: ", countryCode);
     props.value.setCountry(countryCode);
     setCurrCountry(countryName);
   }
@@ -38,11 +38,11 @@ const SearchCountry = (props) => {
             >
                 New Zealand</button>
         </div>
-        <div className='h-16 flex justify-center items-end text-2xl md:text-3xl text-cyan-500 font-redhat font-semibold'>
+        <div className='h-16 flex justify-center text-center items-end text-xl sm:text-2xl md:text-3xl text-cyan-500 font-redhat font-semibold'>
           {
             currCountry === "" ? 
             (<></>) 
-              : 
+            :
             (<>Top Headlines in {currCountry}</>)
           }
         </div>

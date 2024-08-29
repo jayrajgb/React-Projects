@@ -11,7 +11,7 @@ const SearchBar = (props) => {
             onChange={(e) => {
                 props.value.query = e.target.value;
                 // console.log("Query: ", e.target.value);
-                console.log("Searched query: ", props.value.query);
+                // console.log("Searched query: ", props.value.query);
             }}
             placeholder="Search news..."
             />
@@ -26,7 +26,7 @@ const SearchBar = (props) => {
                     const url = encodeURIComponent(props.value.query);
                     // Set
                     props.value.setQuery(url);
-                    console.log("Query: ", props.value.query);
+                    // console.log("Query: ", props.value.query);
                 }
             }}
             >

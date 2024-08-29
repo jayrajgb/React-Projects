@@ -11,10 +11,16 @@ const Homepage = () => {
 
   const [path, setPath] = useState("");
 
+  const [initialRender, setInitialRender] = useState(true);
+
   useEffect(()=>{
-    setPath(`https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}`);
-    // console.log("Query is changed:", query);
-    // console.log("Path: ", path);
+    if(initialRender){
+      setInitialRender(false);
+    }else{
+      setPath(`https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}`);
+      // console.log("Query is changed:", query);
+      // console.log("Path: ", path);
+    }
 },[query, setQuery])
 
   return (

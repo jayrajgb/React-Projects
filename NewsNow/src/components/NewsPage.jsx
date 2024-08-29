@@ -8,10 +8,16 @@ const NewsPage = (props) => {
     const [data, setData] = useState([]);
 
     useEffect(()=>{
-        fetchNews(props.value).then((response)=>{
-            console.log("Response on new page: ",response);
-            setData(response);
-        })
+        if(props.value !== ""){
+            fetchNews(props.value)
+            .then((response)=>{
+                // console.log("Response on new page: ",response);
+                setData(response);
+            })
+            .catch((err)=>{
+                console.log(err);
+            })
+        }
     }, [props.value])
 
     return (
