@@ -5,13 +5,13 @@ import NewsCard from "./NewsCard";
 
 const NewsPage = (props) => {
 
-    const [data, setData] = useState([]);
+    const [data, setData] = useState({});
 
     useEffect(()=>{
         if(props.value !== ""){
             fetchNews(props.value)
             .then((response)=>{
-                // console.log("Response on new page: ",response);
+                console.log("Response on new page: ",response);
                 setData(response);
             })
             .catch((err)=>{
@@ -23,11 +23,11 @@ const NewsPage = (props) => {
     return (
         <>
         {
-            data &&
+            data.articles &&
             (
                 <div className="w-screen py-10 px-5 pb-10 flex flex-wrap gap-6 justify-center dark:bg-neutral-800">
                     {
-                        data.map((item, index)=>{
+                        data.articles.map((item, index)=>{
                             return (
                                 <NewsCard value={item} key={index} />
                             )
