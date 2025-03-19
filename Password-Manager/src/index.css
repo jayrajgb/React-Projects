@@ -1,5 +1,0 @@
-@import "tailwindcss";
-
-.input{
-    @apply hover:outline-2 hover:outline-teal-400 focus:outline-teal-400 rounded-sm px-2 py-1 bg-neutral-800 ;
-}
