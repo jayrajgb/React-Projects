@@ -3,3 +3,16 @@
 .input{
     @apply hover:outline-2 hover:outline-teal-400 focus:outline-teal-400 rounded-sm px-2 py-1 bg-neutral-800 ;
 }
+
+::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(79, 209, 197);
+    border-radius: 2rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+}
