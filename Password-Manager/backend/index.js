@@ -33,7 +33,7 @@ app.delete("/passwords", deleteAll)
 
 app.delete("/passwords/:id", deleteInfo)
 
-const PORT = 5500
+const PORT = process.env.PORT || 5500
 app.listen(PORT, ()=>{
     console.log(`Server running at PORT: http://localhost:${PORT}/`)
 })
