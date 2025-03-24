@@ -31,7 +31,7 @@ app.patch("/passwords", updateInfo)
 
 app.delete("/passwords", deleteAll)
 
-app.delete("/passwords/delete", deleteInfo)
+app.delete("/passwords/:id", deleteInfo)
 
 const PORT = 5500
 app.listen(PORT, ()=>{

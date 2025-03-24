@@ -35,7 +35,8 @@ async function addInfo(req, res) {
 async function updateInfo(req, res) {
     try {
         const body = req.body
-        const data = await passwords.updateOne({ username: body.username }, body)
+        console.log(body)
+        const data = await passwords.updateOne({ _id: body.id }, body)
         return res.json({ success: true, message: "Password Updated!", response: data })
     } catch (error) {
         return res.json({ success: false, message: error.message })
@@ -44,7 +45,8 @@ async function updateInfo(req, res) {
 
 async function deleteInfo(req, res) {
     try {
-        const deleted = await passwords.deleteOne({ url: req.body.url })
+        // console.log(req.body)
+        const deleted = await passwords.deleteOne({ _id: req.params.id })
         return res.json({ success: true, message: "Password Deleted!", response: deleted })
     } catch (error) {
         return res.json({ success: false, message: error.message })
