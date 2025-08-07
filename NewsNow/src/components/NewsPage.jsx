@@ -11,11 +11,11 @@ const NewsPage = (props) => {
         if(props.value !== ""){
             fetchNews(props.value)
             .then((response)=>{
-                console.log("Response on new page: ",response);
+                // console.log("Response on new page: ",response);
                 setData(response);
             })
             .catch((err)=>{
-                console.log(err);
+                // console.log(err);
             })
         }
     }, [props.value])

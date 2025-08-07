@@ -17,7 +17,7 @@ const Homepage = () => {
     if(initialRender){
       setInitialRender(false);
     }else{
-      setPath(`https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}`);
+      setPath(`https://gnews.io/api/v4/search?q=${query}&lang=en&apikey=${apiKey}`);
       // console.log("Query is changed:", query);
       // console.log("Path: ", path);
     }

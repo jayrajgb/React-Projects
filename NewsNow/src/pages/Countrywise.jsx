@@ -18,7 +18,7 @@ const Countrywise = () => {
       setInitialRender(false);
     }
     else{
-      setPath(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`);
+      setPath(`https://gnews.io/api/v4/top-headlines?country=${country}&lang=en&apikey=${apiKey}`);
     }
 },[country])
 

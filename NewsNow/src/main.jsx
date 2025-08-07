@@ -14,23 +14,23 @@ const apiKey = import.meta.env.VITE_myApiKey;
 const display = {
   indianews: {
     title: "Top Headlines in India",
-    path: `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`
+    path: `https://gnews.io/api/v4/top-headlines?country=in&lang=en&apikey=${apiKey}`
   },
   technology: {
     title: "Now in Technology",
-    path: `https://newsapi.org/v2/everything?q=technology&apiKey=${apiKey}`
+    path: `https://gnews.io/api/v4/search?q=technology&lang=en&apikey=${apiKey}`
   },
   sports: {
     title: "Now in Sports",
-    path: `https://newsapi.org/v2/everything?q=sports&apiKey=${apiKey}`
+    path: `https://gnews.io/api/v4/search?q=sports&lang=en&apikey=${apiKey}`
   },
   gaming: {
     title: "Now in Gaming",
-    path: `https://newsapi.org/v2/everything?q=gaming&apiKey=${apiKey}`
+    path: `https://gnews.io/api/v4/search?q=gaming&lang=en&apikey=${apiKey}`
   },
   mcu: {
     title: "Now in Marvel Cinematic Universe",
-    path: `https://newsapi.org/v2/everything?q=marvel%20cinematic%20universe&apiKey=${apiKey}`
+    path: `https://gnews.io/api/v4/search?q=marvel%20cinematic%20universe&lang=en&apikey=${apiKey}`
   },
 }
 
