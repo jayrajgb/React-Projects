@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import fetchNews from "../data/fetchNews";
 
-import NewsCard from "./NewsCard";
+// import NewsCard from "./NewsCard";
+
+import NewsCardLazy from "./NewsCardLazy";
+
+const NewsCard = lazy(() => import("./NewsCard"));
 
 const NewsPage = (props) => {
 
@@ -26,13 +30,23 @@ const NewsPage = (props) => {
             data.articles &&
             (
                 <div className="w-screen py-10 px-5 pb-10 flex flex-wrap gap-6 justify-center dark:bg-neutral-800">
-                    {
-                        data.articles.map((item, index)=>{
-                            return (
-                                <NewsCard value={item} key={index} />
-                            )
-                        })
-                    }
+                    <Suspense 
+                        fallback={
+                            data.articles.map((item, index)=>{
+                                return (
+                                    <NewsCardLazy key={index} />
+                                )
+                            })
+                        }
+                    >
+                        {
+                            data.articles.map((item, index)=>{
+                                return (
+                                    <NewsCard value={item} key={index} />
+                                )
+                            })
+                        }
+                    </Suspense>
 
                 </div>
             )

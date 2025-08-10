@@ -16,7 +16,7 @@ const NewsCard = (props) => {
 
     return (
         <>
-            <div className="w-36 md:w-64 min-h-48 md:min-h-56 p-2 shadow-lg border border-cyan-500 dark:border-none rounded-md flex-col space-y-2 font-redhat text-sm md:text-lg dark:text-neutral-100 cursor-pointer hover:bg-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-950" onClick={openNews}>
+            <div className="w-36 md:w-64 min-h-48 md:min-h-56 p-2 shadow-lg border border-cyan-500 dark:border-none rounded-md flex flex-col space-y-2 font-redhat text-sm md:text-lg dark:text-neutral-100 cursor-pointer hover:bg-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-950" onClick={openNews}>
                 {
                     (props.value.image) ? 
                     (
@@ -25,6 +25,7 @@ const NewsCard = (props) => {
                                 <img 
                                 className="size-full rounded-md object-cover" 
                                 src={props.value.image} 
+                                loading="lazy"
                                 onError={(e)=>{
                                     e.target.src = noimg
                                     // console.log("Image not available!");
@@ -35,7 +36,7 @@ const NewsCard = (props) => {
                                 <div className="h-4/5 font-semibold pb-2">
                                     {props.value.title}
                                 </div>
-                                <div className="h-1/5 flex items-end justify-end pt-2 py-1 pr-1 text-cyan-600 truncate">
+                                <div className="h-1/5 flex items-end justify-end pt-2 pr-1 text-cyan-600 truncate">
                                     {props.value.source.name}
                                 </div>
                             </div>
