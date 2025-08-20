@@ -8,7 +8,7 @@
 
 #### 🖼️ **Snapshot**
 
-![Snapshot](/MemeGenerator/public/project.png)
+![Snapshot](/meme-generator-app/public/project8.png)
 
 ---
 
@@ -35,7 +35,7 @@
 
 ```bash
 git clone https://github.com/jayrajgb/React-Projects.git
-cd meme-generator
+cd meme-generator-app
 npm i
 npm run dev
 ```

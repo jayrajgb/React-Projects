@@ -37,7 +37,7 @@
 
 ```bash
 git clone https://github.com/jayrajgb/React-Projects.git
-cd newsnow
+cd NewsNow
 ```
 
 2. #### **Install dependencies**
