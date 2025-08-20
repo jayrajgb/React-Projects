@@ -1,8 +1,40 @@
-# React + Vite
+#### 🗝️ **Password Manager App** ( Vite • React • CSS • Node • Express • MongoDB)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+##### A full-stack **MERN** password manager with CRUD operations, context-based state management, and a minimalistic UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+#### 🖼️ **Snapshot**
+
+![Snapshot](/Password-Manager/public/project10.png)
+
+---
+
+#### ✨ **Features**
+
+- ##### 🔑 **Secure CRUD** – Create, update, and delete passwords
+- ##### 🗂️ **Context API** – Global state management in React
+- ##### 📋 **Table Rendering** – Clean UI with conditional rendering
+- ##### 🧩 **MVC Architecture** – Backend structured with Mongoose & MVC pattern
+
+---
+
+#### 🛠️ **Tech Stack**
+
+- ##### ⚛️**Frontend:** React • TailwindCSS • Context API
+- ##### 🖥️**Backend:** Node.js • Express.js • Mongoose (MVC)
+- ##### 🗄️**Database:** MongoDB
+- ##### 📦**NPM Packages:** `react-router-dom` , `axios` , `cors` , `express` , `mongoose`
+
+---
+
+#### ⚡ **Quick Setup**
+
+```bash
+git clone https://github.com/jayrajgb/React-Projects.git
+cd meme-generator
+npm i
+npm run dev
+```
