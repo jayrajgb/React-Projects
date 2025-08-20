@@ -10,15 +10,11 @@
 
 #### 🖼️ **Snapshot**
 
----
-
 ![Snapshot](/NewsNow/public/project9.png)
 
 ---
 
 #### ✨ **Features**
-
----
 
 - ##### 🌍 **Country-wise Top Headlines** – Browse trending news globally.
 - ##### 🔍 **Real-time Search** – Fetch stories on any topic instantly.
@@ -36,8 +32,6 @@
 ---
 
 #### ⚡**Quick Setup**
-
----
 
 1. #### **Clone**
 
@@ -57,3 +51,5 @@ npm i
 ```bash
 npm run dev
 ```
+
+---
