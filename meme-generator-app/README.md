@@ -1,32 +1,33 @@
-#### 🗝️ **Password Manager App** ( Vite • React • CSS • Node • Express • MongoDB)
+#### 🤪 **Meme Generator App** ( Vite • React • CSS • Fetch API )
 
 ---
 
-##### A full-stack **MERN** password manager with CRUD operations, context-based state management, and a minimalistic UI.
+##### A fun little project built in **2024** to generate memes and learn React basics.
 
 ---
 
 #### 🖼️ **Snapshot**
 
-![Snapshot](/Password-Manager/public/project10.png)
+![Snapshot](/MemeGenerator/public/project.png)
 
 ---
 
 #### ✨ **Features**
 
-- ##### 🔑 **Secure CRUD** – Create, update, and delete passwords
-- ##### 🗂️ **Context API** – Global state management in React
-- ##### 📋 **Table Rendering** – Clean UI with conditional rendering
-- ##### 🧩 **MVC Architecture** – Backend structured with Mongoose & MVC pattern
+- ##### 🎲 Fetch random memes with **Fetch API**
+- ##### 🖱️ Drag & drop text using **react-draggable**
+- ##### 🔀 Multi-page navigation with **react-router-dom**
+- ##### 🌓 Conditional rendering for dynamic UI
+- ##### ⚡ Built with **Vite + React** for quick setup
 
 ---
 
 #### 🛠️ **Tech Stack**
 
-- ##### ⚛️**Frontend:** React • TailwindCSS • Context API
-- ##### 🖥️**Backend:** Node.js • Express.js • Mongoose (MVC)
-- ##### 🗄️**Database:** MongoDB
-- ##### 📦**NPM Packages:** `react-router-dom` , `axios` , `cors` , `express` , `mongoose`
+- ⚛️ React (Vite)
+- 🎨 CSS
+- 🔗 Fetch API
+- 📦 NPM Packages: `react-router-dom` , `react-draggable`
 
 ---
 
