@@ -1,4 +1,4 @@
-#### 📰 **NewsNow - Daily News App** ( React • TailwindCSS • Fetch API • Vite )
+#### 📰 **NewsNow - Daily News App** ( React • TailwindCSS • Fetch API • Vite ) [↗️](https://jayrajgb-newsnow.vercel.app)
 
 ---
 
